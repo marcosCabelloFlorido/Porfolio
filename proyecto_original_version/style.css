@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700;800&display=swap');
+.header{
+    padding: 10px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #121212;*/
+    border-radius: 20px;
+}
+h1{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800;
+    color: #F0F0F0;
+}
+.logo {
+    max-width: 100px; 
+    height: auto;
+    padding: 10px; 
+}
+
+.enlaces img{
+    max-width: 50px;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: 5px 10px;
+    transition: transform 0.6s;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a:hover{
+    transform: translateY(-15px);
+}
+
+.navbar{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333333; 
+}
+
+body{
+    background-color: #000000;
+}
+
+/* --- ESTILOS DE LA CUADRÍCULA --- */
+
+.peliculas {
+    display: grid;
+    /* Crea 4 columnas de igual ancho */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Centra el contenido dentro de las celdas de la cuadrícula */
+    justify-items: center; 
+    align-items: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+
+.peliculas > div { 
+    /* Define un tamaño máximo para las tarjetas */
+    max-width: 300px;
+    
+    /* ¡CLAVE! Oculta la parte de la imagen ampliada que se sale del div */
+    overflow: hidden; 
+    
+    /* (Opcional) Le da un fondo y relleno para que parezca una tarjeta */
+    background-color: #1E1E1E; 
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.peliculas img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    transition: transform 0.4s ease-in-out; 
+    
+    max-width: 300px; 
+}
+
+/*EFECTO HOVER*/
+.peliculas > div:hover img {
+    /*Amplia la imagen*/
+    transform: scale(1.1); 
+}
+
+section h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
