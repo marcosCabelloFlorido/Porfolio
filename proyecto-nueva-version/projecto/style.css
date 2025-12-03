@@ -1,0 +1,196 @@
+.header{
+    padding: 10px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #121212;*/
+    border-radius: 20px;
+}
+h1{
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800;
+    color: #F0F0F0;
+}
+.logo {
+    max-width: 100px; 
+    height: auto;
+    padding: 10px; 
+}
+
+.enlaces img{
+    max-width: 50px;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: 5px 10px;
+    transition: transform 0.6s;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a:hover{
+    transform: translateY(-15px);
+}
+
+.navbar{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333333; 
+}
+
+body{
+    background-color: #000000;
+}
+
+
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    padding: 20px;
+}
+
+.peliculas > div { 
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    padding: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.peliculas > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.peliculas img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.peliculas > div:hover img {
+    transform: scale(1.05);
+}
+
+section h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contenedor-trailer {
+    display: flex;
+    gap: 30px;
+}
+
+.video {
+    width: 50%;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.texto {
+    width: 50%;
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.texto h1 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.texto p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+
+.personajes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.personajes > div{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    padding: 0;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.personajes > div:hover{
+    transform: translateY(-34px); /*LEVANTACION DEL DIV DE CADA PERSONAJE*/
+}
+
+.personajes h1{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: #1E1E1E;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.personajes > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+}
+
+.personajes img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: #2a2a2a;
+    transition: transform 0.5s ease-in-out; /*ANIMACION AMPLIACION*/
+    margin: 15px 0;
+}
+
+.personajes img:hover{
+    transform: scale(1.05);
+}
+
+.personajes p{
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 1.3em;
+    color: #e0e0e0;
+    text-align: justify;
+}
